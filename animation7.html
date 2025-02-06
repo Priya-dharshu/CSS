@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+           text-align: center;
+           
+            background-color: cornflowerblue;
+            position: relative;
+            animation: mymove 5s;
+            animation-fill-mode: forwards;
+        }
+
+
+.a{animation-timing-function: linear;}
+.b{animation-timing-function: ease;}
+.c{animation-timing-function: ease-in;}
+.d{animation-timing-function: ease-out;}
+.e{animation-timing-function: ease-in-out;}
+
+@keyframes mymove{
+    from{left: 0px;}
+    to{left: 300px; background-color: darkgoldenrod;}
+}
+       
+    </style>
+</head>
+<body>
+    <div class="a">linear</div><br>
+    <div class="b">ease</div><br>
+    <div class="c">ease-in</div><br>
+    <div class="d">ease-out</div><br>
+    <div class="e">ease-in-out</div>
+</body>
+</html>
